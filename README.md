@@ -47,18 +47,7 @@ Target: status
 
 1 = Parkinson’s Disease
 
-🗂️ Project Structure
-parkinsons_project/
-│
-├── app.py
-├── model.pkl
-├── templates/
-│     └── index.html
-├── static/
-│     ├── style.css
-│     ├── script.js
-│     └── hero.png
-└── README.md
+
 
 🔍 How the System Works
 
