@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Neurofy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png">
+    <span>Neurofy</span>
+  </div>
+
+  <div class="nav-right">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#predict">Predict</a></li>
+    </ul>
+    <button class="login-btn">Login</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Parkinson’s Disease Prediction</h1>
+    <p>AI powered system to detect Parkinson’s disease using voice measurements.</p>
+    <button onclick="scrollToPredict()">Start Prediction</button>
+  </div>
+  <div class="hero-img">
+    <!-- HOSPITAL / MEDICAL IMAGE -->
+<img src="/static/hero.png">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <h2>About the System</h2>
+  <div class="about-box">
+    <img src="/static/neuro.jpg">
+    <p>
+      This web application uses <b>Machine Learning algorithms</b> to analyze
+      <b>patient voice parameters</b> and predict whether a person is affected
+      by <b>Parkinson’s Disease</b>.  
+      It supports <i>early detection</i> and assists doctors in diagnosis.
+    </p>
+  </div>
+</section>
+
+<section class="feature">
+  <h2>Model Accuracy</h2>
+  <p>Our Machine Learning model achieves approximately <b>84% accuracy</b> on test data.</p>
+</section>
+
+<section class="predict" id="predict">
+  <h2>Enter Voice Parameters</h2>
+
+  <div class="card">
+    <div class="grid">
+      <input type="number" step="any" placeholder="MDVP:Fo(Hz)">
+      <input type="number" step="any" placeholder="MDVP:Fhi(Hz)">
+      <input type="number" step="any" placeholder="MDVP:Flo(Hz)">
+      <input type="number" step="any" placeholder="MDVP:Jitter(%)">
+      <input type="number" step="any" placeholder="MDVP:Jitter(Abs)">
+      <input type="number" step="any" placeholder="MDVP:RAP">
+      <input type="number" step="any" placeholder="MDVP:PPQ">
+      <input type="number" step="any" placeholder="Jitter:DDP">
+      <input type="number" step="any" placeholder="MDVP:Shimmer">
+      <input type="number" step="any" placeholder="MDVP:Shimmer(dB)">
+      <input type="number" step="any" placeholder="Shimmer:APQ3">
+      <input type="number" step="any" placeholder="Shimmer:APQ5">
+      <input type="number" step="any" placeholder="MDVP:APQ">
+      <input type="number" step="any" placeholder="Shimmer:DDA">
+      <input type="number" step="any" placeholder="NHR">
+      <input type="number" step="any" placeholder="HNR">
+      <input type="number" step="any" placeholder="RPDE">
+      <input type="number" step="any" placeholder="DFA">
+      <input type="number" step="any" placeholder="spread1">
+      <input type="number" step="any" placeholder="spread2">
+      <input type="number" step="any" placeholder="D2">
+      <input type="number" step="any" placeholder="PPE">
+    </div>
+
+    <button class="predict-btn" onclick="predict()">Predict</button>
+    <h2 id="result"></h2>
+  </div>
+</section>
+
+<footer>
+  <p>⚠ For academic use only. Not a medical tool.</p>
+</footer>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
